@@ -1,0 +1,22 @@
+[
+    {
+        "name": "mainSystem",
+        "title": "主系統",
+        "enable": true,
+        "icon": "",
+        "child": [
+            {
+                "name": "index",
+                "title": "首頁",
+                "enable": true,
+                "permissions": {
+                    "view": {
+                        "title": "頁面檢視",
+                        "enable": true,
+                        "default": true
+                    }
+                }
+            }
+        ]
+    }
+]

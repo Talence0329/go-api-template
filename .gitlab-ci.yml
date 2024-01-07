@@ -1,0 +1,18 @@
+stages:
+  - buildbyTag
+  - build_code
+  - publish
+  - changetag
+include:
+  - project: 'infra/acp/devops/ci'
+    ref: main
+    file: '/golang.tag.yml'
+  - project: 'infra/acp/devops/ci'
+    ref: main
+    file: '/golang.build_code_19.yml'
+  - project: 'infra/acp/devops/ci'
+    ref: main
+    file: '/publish.acp.yml'
+  - project: 'infra/acp/devops/ci'
+    ref: main
+    file: '/changetag.yml'
